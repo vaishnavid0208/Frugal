@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark"> -->
+  <nav class="navbar" style="background-color: #a4caf5;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">FRUGAL</a>
+      <style>
+        body {
+          background-color: #fff;
+          color: #000;
+          transition: all 0.5s ease-in-out;
+        }
+
+        .dark-mode {
+          background-color: #000;
+          color: #fff;
+        }
+      </style>
+      <!-- <h1>Welcome to my website</h1>
+        <p>This is some sample text.</p> -->
+
+      <label class="switch">
+        <input type="checkbox" id="toggle">
+        <span class="slider round moon"></span>
+        <span>&#x1f319;</span>
+      </label>
+      <script>
+        const toggleSwitch = document.querySelector('#toggle');
+        const body = document.querySelector('body');
+        toggleSwitch.addEventListener('change', function () {
+          body.classList.toggle('dark-mode');
+        });
+      </script>
+    </div>
+  </nav>
+
+
+
+  <title>Search Bar</title>
+  <div style="text-align:center;">
+    <form>
+      <input type="text" id="search" name="q" placeholder="Enter search term..." style="width: 500px; height: 50px;">
+      <button type="submit">Search</button>
+    </form>
+  </div>
+
+
+  <div class="container">
+    <div id="carouselExampleCaptions" class="carousel carousel-dark carousel-fade slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://img.freepik.com/premium-vector/women-online-shopping-dress-illustration_32854-290.jpg?w=2000"
+            class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>WELCOME TO FRUGAL</h2>
+            <p>Dekho Aur Paise Bachao</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2016/04/price-comparison-apps.jpg"
+            class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <!-- <h5>FRUGAL means</h5>
+              <p>Compare Everything And Get At Lowest Price.</p> -->
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://nestify.io/wp-content/uploads/2023/01/price-comparison-1024x611.jpg" class="d-block w-100"
+            alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <!-- <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p> -->
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+
+  <div class="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Added to Wishlist.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+    crossorigin="anonymous"></script>
+
+  <div class="container my-5">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div
+          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+
+            <h3 class="mb-0">Todays Deals</h3>
+            <div class="mb-1 text-muted"></div>
+            <p class="mb-auto">Checkout the Today's Deals and Enjoy your Shopping</p>
+            <a href="#" class="stretched-link">Todays Deals</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" class="img-fluid"
+              src="data:image/jpeg;base64,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"
+              alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div
+          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+
+            <h3 class="mb-0">New Releases</h3>
+            <!-- <div class="mb-1 text-muted">Nov 1</div> -->
+            <p class="mb-auto">Checkout new release products of top brands</p>
+            <a href="#" class="stretched-link">New Release</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" class="img-fluid"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsxeVVz4Z1cbb36_SC7fQ4AA4IKqHpq1ORtg&usqp=CAU"
+              alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  <section class="pt-16 px-3 content:px-0 content-width">
+    <h3 class="w-full text-2xl font-bold md:text-3xl">Frequently Asked Questions</h3>
+    <h4 class="w-full md:w-4/5 xl:w-2/3 text-gray-600 dark:text-gray-300">Some of the most asked questions by our users
+    </h4>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-5 py-5 ">
+      <div class="flex flex-col">
+        <h5 class="font-semibold">What is a FRUGAL?</h5>
+        <h6><b>FRUGAL</b> is a free website that compare prices of a particular product for various e-commerce stores. It also helps you to choose the product at the best price.</h6>
+      </div>
+    <!-- <div class="grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-5 py-5 hidden"> -->
+      <div class="flex flex-col">
+        <h5 class="font-semibold">What is the use of FRUGAL?</h5>
+        <h6>E-commerce stores change price of their products very frequently. It is recommended to compare <b>price</b>of products you are looking to buy.</h6>
+      </div>
+      <div class="flex flex-col">
+        <h5 class="font-semibold">What stores are supported FRUGAL?</h5>
+        <h6><b>FRUGAL</b> supports major e-commerce stores from India (i.e. Amazon, Flipkart, Myntra, etc). We are
+          working on adding more stores and support them soon.</h6>
+      </div>
+      </div>
+  </section>
+  <div class="content-width mx-auto px-3 lg:px-0 mt-5">
+    <h3 class="w-full text-2xl font-bold md:text-3xl">Supported Stores</h3>
+    <h4 class="w-full md:w-4/5 xl:w-2/3 text-gray-600 dark:text-gray-300">Some of the most asked questions by our users
+    </h4>
+    <h2 class="text-lg font-semibold mt-3">Price History For Amazon</h2>
+    <p>FRUGAL provides price history for Amazon. With this tool, you check the price history of
+      all Amazon products. Amazon keeps changing its inventory pricing and it is the best
+      tool to get full-price insights of Amazon products.</p>
+    <h2 class="text-lg font-semibold">Price History For Flipkart</h2>
+    <p>Flipkart is the top e-commerce store in India.We provide price history for Flipkart and free price tracker for
+      Flipkart.With Flipkart&#x27;s dynamic pricing you can buy products cheaper if you track products with FRUGAL.</p>
+    <h2 class="text-lg font-semibold">Price History For Myntra</h2>
+    <p>Myntra is the biggest hub for fashionable products. With our free tools, you can check the price history for
+      Myntra in few taps and can save a lot on Myntra products.</p>
+    <h2 class="text-lg font-semibold">Price History for more stores</h2>
+    <p>In total, we have 6 Indian stores for which we provide price history. Other stores
+      for which you can check price history aree Nykaa, NykaaMan, NykaaFashion, Ajio, TataCliq, and
+      Croma.</p>
+  </div>
+  </div>
+</body>
+
+</html>
